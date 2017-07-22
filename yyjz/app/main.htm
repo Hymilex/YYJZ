@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>后台测试管理系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<!-- Extra Styles, not needed for Mega Menu or Boostrap -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Mega Menu Style, you kinda really need Bootstrap in order for this to work -->
+	<link href="css/mega-menu.css" rel="stylesheet">
+
+	<!-- Le Google font -->
+	<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://openlayers.org/en/v3.14.2/css/ol.css" type="text/css">
+	<script src="https://openlayers.org/en/v3.14.2/build/ol.js"></script>
+	<!-- You can delete this later -->
+	<style>
+		body {
+			padding-top: 60px;
+			/* 60px to make the container go all the way to the bottom of the topbar */
+		}
+		.map{
+			margin-top: -10px;
+			position: relative;
+		}
+		#slt{
+			position: absolute;
+			z-index: 100;
+			float: right;
+			right: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header class="container">
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href=" "><img src="img/logo.png" alt="responsive Mega Menu" /></a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="#">Main Menu</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-home icon-white"></i> Regular <b class="caret"></b></a>
+								<section class="dropdown-menu mega-menu-2 transition">
+									<ul class="add-bottom-space">
+										<li class="nav-title">This Header</li>
+										<li><a href="#">Menu Item</a></li>
+										<li><a href="#">Menu Item</a></li>
+									</ul>
+								</section>
+							</li>
+							<!-- Regular Menu Ends -->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-briefcase icon-white"></i> Services <b class="caret"></b></a>
+								<section class="dropdown-menu mega-menu-2 transition">
+									<ul>
+										<li class="nav-title">Web Design <span>digitally great</span></li>
+										<li><a href="#">Service 1</a></li>
+										<li><a href="#">Service 2</a></li>
+									</ul>
+								</section>
+							</li>
+							<!-- Services Menu Ends -->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-download icon-white"></i> E-commerce <b class="caret"></b></a>
+							</li>
+							<!-- E-commerce Menu Ends -->
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-globe icon-white"></i> Contact <b class="caret"></b></a>
+							</li>
+							<!-- Contact Menu Ends -->
+							<li class="dropdown right"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> Portfolio <b class="caret"></b></a>
+								<section class="dropdown-menu mega-menu-2 transition">
+									<ul>
+										<li class="nav-title"><span id='name'></span></li>
+										<li class="with-image"><img src="img/client.png" alt="Client" class="img-rounded" /></li>
+									</ul>
+									<ul>
+										<li class="nav-title" id="info_user">Client Info</li>
+										<li>
+											<p id="info_info"></p>
+											<a href="/index.html" id="exit" class="btn">退出登录</a>
+										</li>
+									</ul>
+								</section>
+							</li>
+							<!-- Portfolio Menu Ends -->
+						</ul>
+						<!-- 2 Menu Examples Ends -->
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+				<!-- Container -->
+			</div>
+			<!-- Nav Bar - Inner -->
+		</div>
+		<!-- Nav Bar -->
+
+	</header>
+	<!-- /container -->
+	<div id="slt">
+		<h3>Geometry type &nbsp;</h3>
+		<select id="type">
+        <option value="Point">Point</option>
+        <option value="LineString">LineString</option>
+        <option value="Polygon">Polygon</option>
+        <option value="Circle">Circle</option>
+        <option value="Square">Square</option>
+        <option value="Box">Box</option>
+        <option value="None">None</option>
+      </select>
+	</div>
+	<div id="map" class="map"></div>
+
+	<hr class="container">
+
+	<footer class="container">
+		<p>Simon's version from cumt.<a href="http://www.cssmoban.com/" title="博客" target="_blank">Simon的博客</a></p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/process.js"></script>
+</body>
+
+</html>
