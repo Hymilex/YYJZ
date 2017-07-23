@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "description": "simon's test.",
+  "main": "app.js",
+  "authors": [
+    "simon"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "homepage": "app/index.html",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

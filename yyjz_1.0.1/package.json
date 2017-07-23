@@ -1,0 +1,16 @@
+{
+  "name": "simon",
+  "version": "1.0.0",
+  "description": "\"simon's test\".",
+  "main": "app.js",
+  "dependencies": {
+    "S": "^0.0.1",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "simon",
+  "license": "ISC"
+}

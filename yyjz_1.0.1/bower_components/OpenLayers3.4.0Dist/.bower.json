@@ -1,0 +1,14 @@
+{
+  "name": "OpenLayers3.4.0Dist",
+  "homepage": "https://github.com/EvKoh/OpenLayers3.4.0Dist",
+  "_release": "483b877bcb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "483b877bcb27b11d6d766b8dc724d619c2ce17b2"
+  },
+  "_source": "https://github.com/EvKoh/OpenLayers3.4.0Dist.git",
+  "_target": "*",
+  "_originalSource": "OpenLayers3.4.0Dist",
+  "_direct": true
+}
